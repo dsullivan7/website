@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" ng-app="sullivanweb">
 <head>
     <meta charset="utf-8">
 
@@ -6,17 +6,32 @@
     <meta name="description" content="Danny Sullivan's Personal Website">
     <meta name="author" content="Danny Sullivan">
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
     <script src="js/main.js"></script>
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
-<body onload="DannySite.populateHtml('about')">
+<body ng-controller="DannyController">
     <div id="full_page">
-        <ul id="head_navigation">
+        <div id="danny_navigation">
+            <ul class="nav nav-tabs nav-justified">
+                <li role="presentation" ng-class="navClass('home')"><a href='/#/home'>Home</a></li>
+                <li role="presentation" ng-class="navClass('about')"><a href='/#/about'>About</a></li>
+            </ul>
+        </div>
+
+        <div ng-view></div>
+        <!-- <ul id="head_navigation">
             <li class="navigation_link" onclick="DannySite.populateHtml('about')">About</li><li class="navigation_link" onclick="DannySite.populateHtml('links')">Projects</li>
         </ul>
         <div id="page_body">
-        </div>
+        </div> -->
     </div>
 </body>
 </html>
