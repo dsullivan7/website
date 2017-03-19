@@ -14,6 +14,12 @@ def index():
     return app.send_static_file('index.html')
 
 
+@app.route('/blah', methods=['POST'])
+def blah():
+    """Test."""
+    return 'blah'
+
+
 @app.after_request
 def add_header(response):
     """Add headers to stop caching."""
