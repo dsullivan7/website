@@ -3,23 +3,16 @@
   src: url("./fonts/Benne/Benne-Regular.ttf") format("truetype");
 }
 
+$theme-colors: (
+  "primary": #16c6cc,
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
 body {
   background-color: white;
   margin: 0;
   font-family: 'Benne';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-button {
-  height: 100px;
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon {
-  height: 80px;
-  width: 80px;
 }

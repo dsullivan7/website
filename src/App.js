@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
-import './App.css'
+import './App.scss'
 
 library.add(fab)
 
@@ -18,10 +18,10 @@ function App() {
         <Button className="icon-button" href="https://stackoverflow.com/users/2246559/danny-sullivan">
           <FontAwesomeIcon size="3x" icon={['fab', 'stack-overflow']} />
         </Button>
-        <Button className="icon-button" href="https://stackoverflow.com/users/2246559/danny-sullivan">
+        <Button className="icon-button" href="https://www.linkedin.com/in/danny-sullivan-8a843846/">
           <FontAwesomeIcon size="3x" icon={['fab', 'linkedin']} />
         </Button>
-        <Button className="icon-button" href="https://www.linkedin.com/in/danny-sullivan-8a843846/">
+        <Button className="icon-button" href="https://github.com/dsullivan7">
           <FontAwesomeIcon size="3x" icon={['fab', 'github']} />
         </Button>
       </div>
